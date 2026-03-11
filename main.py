@@ -1,7 +1,8 @@
 import json
 import os
 
-import ortools_solver as ort
+import ortools_solver
+import pyvrp_solver
 
 def load_data(filename):
     directory = os.path.dirname(__file__)
@@ -27,9 +28,9 @@ def load_data(filename):
 
 def main():
     problem_data = load_data('cvrp_problem_data.json')
+    ortools_solver.ortools_solver(problem_data)
 
-
-    ort.ortools_solver(problem_data)
+    pyvrp_solver.pyvrp_solver(problem_data)
 
 if __name__ == '__main__':
     main()
