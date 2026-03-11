@@ -5,4 +5,5 @@ description = "Add your description here"
 requires-python = ">=3.13"
 dependencies = [
     "ortools>=9.15.6755",
+    "pyvrp>=0.13.3",
 ]
