@@ -29,7 +29,8 @@ Run project using:
 ```python main.py```
 
 ## Summary of Results
-
+Results from both optimization methods are included below. Both methods were able to find the same optimal solution
+which provides validation that both methods are working correctly.
 
 ### Optimzation method: OR-Tools
 
@@ -42,6 +43,10 @@ Total distance: 215
 Total load: 190
 
 ### Optimzation method: PyVRP
+The solution presented by PyVRP is interesting as it appears to return the node name values off by 1 from the ones
+as it seems to index from 1 instead of 0. It also appears to not include the starting node in the solution for the 
+first returned route. Given the total distance, total load, and order of the results are all otherwise the same as the
+results from OR-Tools it can be assumed that the results are the same.
 
 Route 0: [5, 14, 6, 10, 9, 19, 13, 4, 3, 1], Load: 92
 
@@ -54,7 +59,8 @@ Total load: 190
 ## Key Design Decisions and Assumptions
 
 An initial survey was conducted of the available approaches, algorithms, and libraries available to solve CVRP problems.
-From this survey a short list of candidate libraries was found:
+Readily available libraries were chosen to ensure that the chosen approaches were correct, thoroughly tested, and easy 
+to implement. From this survey a short list of candidate libraries was found:
 
 - OR-Tools
 - PyVRP
@@ -71,3 +77,6 @@ OR-Tools and PyVRP as the remaining candidates.
 
 To ensure that the results of the solvers were valid it was determined that both solvers should be implemented for
 comparison. 
+
+Example implementations of these solvers for both libraries were available on their respective websites. For this
+project these examples were adapted to suit the specifics of this problem being solved.
