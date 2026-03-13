@@ -24,7 +24,7 @@ the 0-th node.
 ## Instructions to run the project
 Prepare a virtual environment of choice (uv was used for development) and install the dependencies.
 
-Run the project using:
+Download the project and from the project directory run the application using the following command in the terminal:
 
 ```python main.py```
 
