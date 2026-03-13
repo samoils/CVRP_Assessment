@@ -14,8 +14,10 @@ def pyvrp_solver(problem_data):
 
     # Add vehicles to the model. First add the start depot location created above, only allow 1 of each vehicle,
     # and then add the capacity for each vehicle from the problem data.
-    m.add_vehicle_type(start_depot=start_depot, num_available=1, capacity=problem_data['vehicle_capacities'][0])
-    m.add_vehicle_type(start_depot=start_depot, num_available=1, capacity=problem_data['vehicle_capacities'][1])
+    m.add_vehicle_type(start_depot=start_depot, end_depot=start_depot,num_available=1,
+                       capacity=problem_data['vehicle_capacities'][0])
+    m.add_vehicle_type(start_depot=start_depot, end_depot=start_depot, num_available=1,
+                       capacity=problem_data['vehicle_capacities'][1])
 
     # Add all the drop-off locations to the model. Similar to the Depot the 2D indexing needs to be "faked" by
     # repeating the index.

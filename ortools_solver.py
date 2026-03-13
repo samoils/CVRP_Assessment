@@ -80,4 +80,3 @@ def ortools_solver(problem_data):
 
     # Print the data using the print_results function in the print_results module.
     print_results.print_results("OrTools", routes, loads, total_distance)
-    return True
