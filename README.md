@@ -43,10 +43,10 @@ Total distance: 215
 Total load: 190
 
 ### Optimization method: PyVRP
-The solution presented by PyVRP is interesting as it appears to return the node name values off by 1 from the ones
-as it seems to index from 1 instead of 0. It also appears to not include the starting node in the solution for the 
-first returned route. Given the total distance, total load, and order of the results are all otherwise the same as the
-results from OR-Tools, it can be assumed that the results are the same.
+The solution presented by PyVRP is interesting as it appears to return the node name values off by 1 from the OR-Tools
+solutions as it seems to index from 1 instead of 0. It also appears to not include the starting node in the solution for
+the first returned route. Given the total distance, total load, and order of the results are all otherwise the same as 
+the results from OR-Tools, it can be assumed that the results are the same.
 
 Route 0: [5, 14, 6, 10, 9, 19, 13, 4, 3, 1], Load: 92
 
