@@ -71,9 +71,9 @@ to implement. From this survey a short list of candidate libraries was found:
 - Gurobi
 
 The Gurobi, D-Wave Ocean CVRP solver, CPLEX, and Qiskit Optimization libraries were eliminated due to the complexity
-and commercial license requirements. This left OR-Tools, PyVRP, and cuOpt. To ensure the widest range of compatibility
-and the time constraints around implementation, it was determined that cuOpt was not an ideal candidate. This left 
-OR-Tools and PyVRP as the remaining candidates.
+and paid license requirements. This left OR-Tools, PyVRP, and cuOpt. To ensure the widest range of compatibility
+and the time constraints around complexity of implementation, it was determined that cuOpt was not an ideal candidate. 
+This left OR-Tools and PyVRP as the remaining candidates.
 
 To ensure that the results of the solvers were valid, it was determined that both solvers should be implemented for
 comparison. 
