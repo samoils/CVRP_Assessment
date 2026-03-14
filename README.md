@@ -1,6 +1,6 @@
-# CVPR_Routing
+# CVRP_Routing
 
-This project implements a solution to a Capacitated Vehicle Routing Problem (CVPR). Two separate methods are tested to
+This project implements a solution to a Capacitated Vehicle Routing Problem (CVRP). Two separate methods are tested to
 provide validation that the correct solution is being found. Several different methods were originally considered,
 however, due to implementation practicalities and time constraints, the OR-Tools solver and PyVRP were chosen.
 
