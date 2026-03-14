@@ -4,6 +4,17 @@ This project implements a solution to a Capacitated Vehicle Routing Problem (CVP
 provide validation that the correct solution is being found. Several different methods were originally considered,
 however, due to implementation practicalities and time constraints, the OR-Tools solver and PyVRP were chosen.
 
+## Repository Contents
+- main.py - Loads the data from the JSON file and controls main program flow
+- or_tools_solver.py - Finds the solution to the CVRP problem using the OR-Tools built in ability to solve this specific 
+type of problem. Uses the CP-SAT solver
+- pyvrp_solver.py - Finds the solution to the CVRP problem using the PyVRP built in ability to solve this specific type 
+of problem. This method is based on a local search algorithm
+- print_results.py - Takes the solution outputs (the name of the optimization method, the routes, and loads of the 
+routes, and the total distance of each route) and prints them
+- cvrp_problem_data.json - The JSON file containing the data for the CVRP problem
+- CVRP_Assessment.pdf - Presentation discussing the results of this project
+
 ## CVRP Problem Description
 The Capacitated Vehicle Routing Problem (CVRP) is a combinatorial optimization problem that is a generalization of the
 traveling salesman problem. This problem is tasked with determining an optimal route through a set of delivery nodes
